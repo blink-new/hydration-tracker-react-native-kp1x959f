@@ -47,7 +47,7 @@ export default function WaterBottle({ currentAmount, dailyGoal }: WaterBottlePro
           {/* Water Fill */}
           <Animated.View style={[styles.waterContainer, { height: animatedHeight }]}>
             <LinearGradient
-              colors={['#00D4FF', '#0099CC', '#006699']}
+              colors={['#00BFFF', '#0080FF', '#0040FF', '#002080']}
               style={styles.water}
               start={{ x: 0, y: 1 }}
               end={{ x: 0, y: 0 }}
@@ -102,19 +102,19 @@ const styles = StyleSheet.create({
   bottleBody: {
     width: 120,
     height: 320,
-    borderWidth: 3,
-    borderColor: '#E2E8F0',
+    borderWidth: 4,
+    borderColor: '#1E40AF',
     borderRadius: 15,
     borderTopLeftRadius: 8,
     borderTopRightRadius: 8,
     position: 'relative',
     overflow: 'hidden',
-    backgroundColor: 'rgba(255,255,255,0.9)',
-    shadowColor: '#000',
+    backgroundColor: 'rgba(255,255,255,0.95)',
+    shadowColor: '#1E40AF',
     shadowOffset: { width: 0, height: 4 },
-    shadowOpacity: 0.1,
+    shadowOpacity: 0.3,
     shadowRadius: 8,
-    elevation: 5,
+    elevation: 8,
   },
   measurementLine: {
     position: 'absolute',
@@ -174,7 +174,7 @@ const styles = StyleSheet.create({
   currentAmount: {
     fontSize: 36,
     fontWeight: 'bold',
-    color: '#00D4FF',
+    color: '#0080FF',
   },
   goalText: {
     fontSize: 16,
@@ -184,7 +184,7 @@ const styles = StyleSheet.create({
   percentageText: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: '#00D4FF',
+    color: '#0080FF',
     marginTop: 8,
   },
 });
